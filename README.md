@@ -1,5 +1,5 @@
 # **remove-small-folders**
-Remove folder with less than 2 items (files or folders) in them.     
+Remove folders with less than 2 items (files or folders) in them.     
 Note: this number can be changed, see [Global Variables](#global-variables)
 
 
