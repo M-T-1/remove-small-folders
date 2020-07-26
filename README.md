@@ -1,3 +1,5 @@
+![GitHub top language](https://img.shields.io/github/languages/top/M-T-1/remove-small-folders)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/M-T-1/remove-small-folders)
 # **remove-small-folders**
 Remove folders with less than 2 items (files or folders) in them.     
 Note: this number can be changed, see [Global Variables](#global-variables)
