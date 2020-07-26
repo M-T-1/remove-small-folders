@@ -28,7 +28,7 @@ def menu():
     print("The dependencies of this script are all part of the python standard library,")
     print("so it should be executable from anywhere, provided python has been installed correctly on the host device.")
     print()
-    print("This script will find any folders containing less than " + str(data["threshold"]) + " files or folders")
+    print("This script will find any folders containing less than " + str(settings["threshold"]) + " files or folders")
     print("It will then the contents of said folder into the parent of said folder, then delete said folder.")
     print("Would you like a better explanation of what this script does?")
 
@@ -89,7 +89,7 @@ def main():
             else:
                 data["files_searched"] += 1
             x += 1
-        if x <= data["threshold"]:
+        if x <= settings["threshold"]:
             print("- - - -")
             print("Directory : " + s)
             print("Object count : " + str(x))
@@ -155,7 +155,7 @@ def runtime_stats():
     print("Runtime Data:")
     print("This script is " + os.path.basename(__file__))
     print("The root path for folder alteration is " + str(settings["root_path"]))
-    print("For a folder to be deleted, it must contain less than " + str(data["threshold"] + 1) + " items")
+    print("For a folder to be deleted, it must contain less than " + str(settings["threshold"] + 1) + " items")
     print(str(data["folders_searched"]) + " folder(s) have been indexed during runtime")
     print(str(data["files_searched"]) + " file(s) have been indexed during runtime")
     print()
