@@ -25,6 +25,9 @@ delete the folder, **after** moving the contents of the folder  to the parent fo
 e.g. \files\pics\apples.png to \files\pics-apples.png or \files\pics\orchard\ to \files\pics-orchard\
   
 ## Global Variables:
+
+prompt_override is the only one of these that has been tested and is known to work.
+
 Lines 14 and 15 hold the settings dictionary.
 You can edit the values quite easily, just beware of setting the threshold too high.
 
