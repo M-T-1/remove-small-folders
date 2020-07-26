@@ -4,8 +4,6 @@
 Remove folders with less than 2 items (files or folders) in them.     
 Note: this number can be changed, see [Global Variables](#global-variables)
 
-
-
 Disclaimer:
 This is the first time I've used github and this is the closest I've ever come to a decent python script.
 
@@ -30,19 +28,19 @@ e.g. \files\pics\apples.png to \files\pics-apples.png or \files\pics\orchard\ to
 Lines 14 and 15 hold the settings dictionary.
 You can edit the values quite easily, just beware of setting the threshold too high.
 
- - The prompt_override key.
-	 Set the value to true and it will run without any user input.
-	 This is useful for if you want to pipe the output to a text file.
- - The folders_get_prefixed key.
-	 Set the value to false and any folders that get moved won't be prefixed with the name of the parent folder that got deleted.
- - The files_get_prefixed key.
-	 Set the value to false and any filesthat get moved won't be prefixed with the name of the parent folder that got deleted.
- - The root_path key.
-		Leave this blank to make the script run in the folder it is located in.
-		Set it to a valid path and the script will run in that location instead of it's own location.
- - The threshold key.
-	 This dictates the maximum number of items in a folder before the script decided that the folder needs deleting.
-	 e.g. if you set the threshold to 99, then the only folders left will be ones with 100 or more files and folders in them (note: the script doesn't count files inside folders inside the folder it is checking.
+- The prompt_override key.
+	Set the value to true and it will run without any user input.
+	This is useful for if you want to pipe the output to a text file.
+- The folders_get_prefixed key.
+	Set the value to false and any folders that get moved won't be prefixed with the name of the parent folder that got deleted.
+- The files_get_prefixed key.
+	Set the value to false and any filesthat get moved won't be prefixed with the name of the parent folder that got deleted.
+- The root_path key.
+	Leave this blank to make the script run in the folder it is located in.
+	Set it to a valid path and the script will run in that location instead of it's own location.
+- The threshold key.
+	This dictates the maximum number of items in a folder before the script decided that the folder needs deleting.
+	e.g. if you set the threshold to 99, then the only folders left will be ones with 100 or more files and folders in them (note: the script doesn't count files inside folders inside the folder it is checking.
 
 
 
