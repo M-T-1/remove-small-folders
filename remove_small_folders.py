@@ -12,8 +12,8 @@ data = {"folders_searched": 0, "folders_flagged": 0, "folders_moved": 0, "files_
 # ^ is used for end of script metric list
 # not super important but I felt like adding it
 
-settings = {"root_path": "", "threshold": 1, "prompt_override": False, "folders_get_prefixed": True,
-            "files_get_prefixed": True}
+settings = {"root_path": "path", "threshold": 0, "prompt_override": True, "folders_get_prefixed": False,
+            "files_get_prefixed": False}
 
 
 # I left the threshold value in the global dict in case anyone felt like tweaking it for some possibly insane (imo) file management
@@ -59,10 +59,10 @@ def main():
     menu()
     subdirectories = []
     print("Your current location is: " + os.getcwd())
-    if settings["root_path"] == "":
-        settings["root_path"] = Path(os.getcwd())
-    else:
-        print("Settings value preset to: " + settings["root_path"])
+    while not os.path.exists(settings["root_path"]):
+        print("enter path\n")
+        settings["root_path"] = input()
+    print("Settings value preset to: " + settings["root_path"])
     # testing paths
     # settings["root_path"] = Path("T:" + chr(92) + "###x" + chr(92))
     # settings["root_path"] = Path("T:" + chr(92))
